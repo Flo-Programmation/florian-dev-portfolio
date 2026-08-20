@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon-site-portfolio.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio - Florian ALBUFFY - Apprenti Développeur</title>
+</head>
+<body>
+    
+    <!-- NAVBAR GLASSMOPHIC ET CONTROLES -->
+    <nav>
+        <div class="nav-container">
+            <div class="left-nav">
+                <img src="img/icon-site-portfolio.png" alt="Logo" class="logo-img">
+            </div>
+            
+            <div class="right-nav" id="right-nav">
+                <a href="#competences" data-i18n="nav-skills">Compétences</a>
+                <a href="#formations" data-i18n="nav-education">Formations</a>
+                <a href="#projets" data-i18n="nav-projects">Projets</a>
+                <a href="#contact" data-i18n="nav-contact">Contact</a>
+            </div>
+
+            <!-- PANNEAU D'ACCESSIBILITÉ & PARAMÈTRES -->
+            <div class="nav-controls">
+                <!-- Selecteur de Langue -->
+                <button id="lang-btn" class="ctrl-btn" title="Changer de langue">EN</button>
+                
+                <!-- Contrôle Taille de Police -->
+                <button id="font-decrease" class="ctrl-btn" title="Réduire le texte">A-</button>
+                <button id="font-increase" class="ctrl-btn" title="Agrandir le texte">A+</button>
+
+                <!-- Toggle Thème Sombre/Clair -->
+                <button id="theme-toggle" class="ctrl-btn" title="Basculer de thème">🌙</button>
+            </div>
+
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>portfolio</h1>
+        <h2>by Florian.</h2>
+        <p class="header-subtitle">Apprenti Développeur | Passionné par le Web, les Logiciels & l'Embarqué</p>
+    </header>
+
+<!-- SECTION COMPÉTENCES / À PROPOS (VERSION REDESIGNÉE) -->
+<section class="competences" id="competences">
+    
+    <!-- À Propos -->
+    <div class="about-card">
+        <div class="about-badge">PROFIL</div>
+        <h2 data-i18n="about-title">À propos de moi</h2>
+        <p data-i18n="about-text">
+            Développeur en apprentissage, passionné par la création d'applications web modernes, 
+            de logiciels sur-mesure et l'exploration des systèmes embarqués.
+        </p>
+        <div class="about-stats">
+            <div class="stat-item">
+                <span class="stat-num">12+</span>
+                <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Motivation</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Grille de Compétences par Catégories -->
+    <div class="skills-dashboard">
+        
+        <!-- Catégorie 1: Web & Interface -->
+        <div class="skill-category">
+            <div class="category-header">
+                <span class="category-icon">💻</span>
+                <h3>Web & UI</h3>
+            </div>
+            <div class="skill-bars">
+                <div class="skill-card">
+                    <div class="skill-info"><span>HTML / CSS</span><span>95%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info"><span>Flutter</span><span>60%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catégorie 2: Backend & Base de données -->
+        <div class="skill-category">
+            <div class="category-header">
+                <span class="category-icon">⚙️</span>
+                <h3>Backend & Data</h3>
+            </div>
+            <div class="skill-bars">
+                <div class="skill-card">
+                    <div class="skill-info"><span>PHP / Symfony</span><span>70%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info"><span>MySQL</span><span>85%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info"><span>Python</span><span>70%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catégorie 3: Systèmes & Outils -->
+        <div class="skill-category">
+            <div class="category-header">
+                <span class="category-icon">🛠️</span>
+                <h3>Systèmes & Hardware</h3>
+            </div>
+            <div class="skill-bars">
+                <div class="skill-card">
+                    <div class="skill-info"><span>Linux</span><span>70%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info"><span>GitHub</span><span>85%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info"><span>Arduino / Solidworks</span><span>70%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- SECTION PROJETS -->
+    <section class="projets" id="projets">
+        <div class="cards-container">
+            <!-- CARTE 1 -->
+            <a href="#" class="card">
+                <div class="card-image-wrapper">
+                    <div class="card-image"></div>
+                    <div class="card-btn">
+                        <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">PROJET 1</h3>
+                    <p class="card-description">Description de ton premier projet. Ce qu'il fait et comment tu l'as réalisé.</p>
+                    <div class="card-tags"><span class="tag">HTML/CSS</span><span class="tag">JS</span></div>
+                </div>
+            </a>
+            <!-- CARTE 2 -->
+            <a href="#" class="card">
+                <div class="card-image-wrapper">
+                    <div class="card-image"></div>
+                    <div class="card-btn"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">PROJET 2</h3>
+                    <p class="card-description">Description de ton deuxième projet.</p>
+                    <div class="card-tags"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+                </div>
+            </a>
+            <!-- CARTE 3 -->
+            <a href="#" class="card">
+                <div class="card-image-wrapper">
+                    <div class="card-image"></div>
+                    <div class="card-btn"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">PROJET 3</h3>
+                    <p class="card-description">Description de ton troisième projet.</p>
+                    <div class="card-tags"><span class="tag">Symfony</span></div>
+                </div>
+            </a>
+            <!-- CARTE 4 -->
+            <a href="#" class="card">
+                <div class="card-image-wrapper">
+                    <div class="card-image"></div>
+                    <div class="card-btn"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">PROJET 4</h3>
+                    <p class="card-description">Description de ton quatrième projet.</p>
+                    <div class="card-tags"><span class="tag">Flutter</span></div>
+                </div>
+            </a>
+            <!-- CARTE 5 -->
+            <a href="#" class="card">
+                <div class="card-image-wrapper">
+                    <div class="card-image"></div>
+                    <div class="card-btn"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">PROJET 5</h3>
+                    <p class="card-description">Description de ton cinquième projet.</p>
+                    <div class="card-tags"><span class="tag">Python</span><span class="tag">Arduino</span></div>
+                </div>
+            </a>
+            <!-- CARTE 6 -->
+            <a href="#" class="card">
+                <div class="card-image-wrapper">
+                    <div class="card-image"></div>
+                    <div class="card-btn"><svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">PROJET 6</h3>
+                    <p class="card-description">Description de ton sixième projet.</p>
+                    <div class="card-tags"><span class="tag">Linux</span><span class="tag">GitHub</span></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- BULLE DE CONTACT FIXE (FAB) -->
+    <div class="fab-container">
+        <div class="fab-links" id="fab-links">
+            <a href="#" target="_blank" title="GitHub">GH</a>
+            <a href="#" target="_blank" title="LinkedIn">LI</a>
+            <a href="#" target="_blank" title="Email">@</a>
+        </div>
+        <button class="fab-button" id="fab-button">
+            +
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter",
+          "animation-timeline",
+          "animation-range",
+          "animation-timeline: view()"
+        ]
+      }
+    ],
+    "no-inline-styles": "off"
+  }
+}
