@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine Porsche - Projet Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- BOUTON RETOUR -->
+    <nav class="project-nav">
+        <a href="../index.html" class="back-btn">
+            <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Retour au portfolio
+        </a>
+    </nav>
+
+    <main class="project-container">
+        
+        <!-- EN-TÊTE DU PROJET -->
+        <header class="project-header">
+            <h1 class="project-title">Vitrine Porsche</h1>
+            <p class="project-subtitle">Expérience web immersive intégrant la visualisation de modèles automobiles interactifs en 3D.</p>
+        </header>
+
+        <!-- GRILLE DE MÉTADONNÉES -->
+        <section class="meta-grid">
+            <div class="meta-card">
+                <span class="meta-icon">💻</span>
+                <div>
+                    <span class="meta-label">Langages & Techs</span>
+                    <div class="tag-group">
+                        <span class="tech-tag">HTML / CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Three.js (WebGL)</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meta-card">
+                <span class="meta-icon">📅</span>
+                <div>
+                    <span class="meta-label">Date</span>
+                    <span class="meta-value">Juin 2026</span>
+                </div>
+            </div>
+
+            <div class="meta-card">
+                <span class="meta-icon">📍</span>
+                <div>
+                    <span class="meta-label">Lieu</span>
+                    <span class="meta-value">CIREST, Saint-Benoît</span>
+                </div>
+            </div>
+
+            <div class="meta-card">
+                <span class="meta-icon">⏱️</span>
+                <div>
+                    <span class="meta-label">Durée</span>
+                    <span class="meta-value">2 Semaines</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- LECTEUR VIDÉO DE DÉMONSTRATION -->
+        <section class="video-section">
+            <h2 class="section-heading">Démonstration vidéo</h2>
+            <div class="video-wrapper">
+                <video controls poster="img/Showcase Porsche.png">
+                    <source src="../videos/sitevitrineporsche_YCWe5gMX.mp4" type="video/mp4">
+                    Votre navigateur ne prend pas en charge la lecture de vidéos.
+                </video>
+            </div>
+        </section>
+
+        <!-- DESCRIPTION DÉTAILLÉE -->
+        <section class="description-section">
+            <h2 class="section-heading">À propos du projet</h2>
+            <div class="description-content">
+                <p>
+                    Ce projet consistait à concevoir un site vitrine interactif et moderne inspiré de l'univers de la marque Porsche. L'objectif principal était de dépasser les fonctionnalités d'un site vitrine traditionnel en offrant une expérience utilisateur (UX) immersive grâce à l'intégration de modèles 3D manipulables en temps réel.
+                </p>
+                <p>
+                    Les utilisateurs peuvent explorer la carrosserie sous différents angles, personnaliser la couleur de la voiture et consulter les spécifications techniques de chaque véhicule de manière dynamique. Une attention particulière a été portée aux performances de chargement et à la fluidité des animations Three.js sur tous les types d'écrans.
+                </p>
+
+                <h3>Fonctionnalités clés :</h3>
+                <ul>
+                    <li>Visionneuse 3D temps réel avec contrôles de caméra fluides (orbit controls).</li>
+                    <li>Personnalisateur de peinture en direct appliqué sur le rendu 3D.</li>
+                    <li>Fiches techniques dynamiques alimentées par une base de données MySQL et une API PHP.</li>
+                    <li>Design entièrement responsive adapté aux mobiles, tablettes et ordinateurs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LIENS UTILITY & DOCUMENTS -->
+        <section class="links-section">
+            <h2 class="section-heading">Ressources & Liens</h2>
+            <div class="links-grid">
+                <a href="https://canva.link/l1o226ndn4suhwa" target="_blank" class="link-card">
+                    <div class="link-icon">📄</div>
+                    <div class="link-info">
+                        <span class="link-title">Cahier des charges</span>
+                        <span class="link-desc">Document PDF complet (Spécifications & Wireframes)</span>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
