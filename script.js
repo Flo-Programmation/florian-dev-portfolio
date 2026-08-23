@@ -85,13 +85,4 @@ document.addEventListener("DOMContentLoaded", () => {
         burgerMenu.classList.toggle("active");
         rightNav.classList.toggle("open");
     });
-
-    // 5. BULLE SOCIALE (FAB)
-    const fabButton = document.getElementById("fab-button");
-    const fabLinks = document.getElementById("fab-links");
-
-    fabButton.addEventListener("click", () => {
-        fabButton.classList.toggle("active");
-        fabLinks.classList.toggle("show");
-    });
 });
