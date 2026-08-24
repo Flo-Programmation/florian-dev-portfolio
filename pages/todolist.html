@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API REST ToDo List - Portfolio Florian Albuffy</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- BOUTON RETOUR -->
+    <nav class="project-nav">
+        <a href="../index.html" class="back-btn">
+            <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Retour au portfolio
+        </a>
+    </nav>
+
+    <main class="project-container">
+        
+        <!-- EN-TÊTE DU PROJET -->
+        <header class="project-header">
+            <h1 class="project-title">API REST - ToDo List</h1>
+            <p class="project-subtitle">Création d'une application capable de gérer dynamiquement des tâches grâce à des requêtes HTTP, développée avec Python et FastAPI.</p>
+        </header>
+
+        <!-- GRILLE DE MÉTADONNÉES -->
+        <section class="meta-grid">
+            <div class="meta-card">
+                <span class="meta-icon"></span>
+                <div>
+                    <span class="meta-label">Langages & Techs</span>
+                    <div class="tag-group">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">JSON</span>
+                        <span class="tech-tag">Uvicorn</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meta-card">
+                <span class="meta-icon"></span>
+                <div>
+                    <span class="meta-label">Date</span>
+                    <span class="meta-value">Mai - Juin 2026</span>
+                </div>
+            </div>
+
+            <div class="meta-card">
+                <span class="meta-icon"></span>
+                <div>
+                    <span class="meta-label">Contexte</span>
+                    <span class="meta-value">Stage CIREST, Saint-Benoît</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESCRIPTION DÉTAILLÉE -->
+        <section class="description-section">
+            <h2 class="section-heading">À propos du projet</h2>
+            <div class="description-content">
+                <p>
+                    Durant mon stage à la CIREST, j'ai eu pour mission de concevoir une API REST robuste permettant de gérer une application de type ToDo List. L'objectif était de me familiariser avec le développement Back-End en utilisant <strong>Python</strong> et <strong>FastAPI</strong>, tout en structurant les échanges de données au format JSON.
+                </p>
+
+                <h3>Fonctionnalités développées :</h3>
+                <ul>
+                    <li><strong>Opérations CRUD :</strong> Création, modification, suppression et affichage de toutes les tâches.</li>
+                    <li><strong>Gestion du temps :</strong> Ajout d'une date de fin pour chaque tâche.</li>
+                    <li><strong>Système d'alerte :</strong> Déclenchement d'une alerte lorsqu'une tâche arrive à moins de 24 heures de sa date limite.</li>
+                    <li><strong>Traitement par lots :</strong> Possibilité de supprimer plusieurs tâches simultanément.</li>
+                </ul>
+
+                <h3>Défis techniques surmontés :</h3>
+                <p>
+                    La principale difficulté de ce projet a résidé dans la <strong>gestion des dates et du temps</strong>, ainsi que dans la <strong>validation stricte des données</strong> envoyées à l'API. La résolution de ces problématiques m'a permis de mieux appréhender les exigences de sécurité et de fiabilité côté serveur.
+                </p>
+            </div>
+        </section>
+
+        <!-- LIENS UTILITY & DOCUMENTS -->
+        <section class="links-section">
+            <h2 class="section-heading">Ressources & Liens</h2>
+            <div class="links-grid">
+                <a href="https://github.com/Flo-Programmation/API_ToDoList.git" target="_blank" class="link-card highlight">
+                    <div class="link-icon"></div>
+                    <div class="link-info">
+                        <span class="link-title">Code Source (GitHub)</span>
+                        <span class="link-desc">Consulter le repository du projet</span>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
